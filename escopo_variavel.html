@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Escopo de variável</title>
+	<script>
+		
+	// 3 escopos: global, função e o bloco
+	
+	var serie = "Friends"	
+	//escopo bloco
+	if (true){
+		var serie2 = "Game of Thrones" //hoisting elevação de escopo global
+		document.write(serie)
+	}
+
+	document.write(serie2)
+
+	document.write('<br/>')
+
+	function x(){
+		document.write(serie)
+		document.write(serie2)
+	}
+
+	x()
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
